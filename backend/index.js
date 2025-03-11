@@ -26,13 +26,13 @@ app.post("/subscribe", async (req, res) => {
     port: 587, // Use 465 if using SSL
     secure: false, // true for 465, false for 587
     auth: {
-      user: "fasst.sallar@gmail.com",
-      pass: "zunhllnnocqjiaml" // Use Gmail App Password
+      user: "",
+      pass: "" // Use Gmail App Password
     }
   })
 
   const mailOptions = {
-    from: 'fasst.sallar@gmail.com',
+    from: '',
     to: email,
     subject: 'Sending Email using Node.js',
     text: 'That was easy!'
